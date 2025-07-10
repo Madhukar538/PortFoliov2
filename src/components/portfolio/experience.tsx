@@ -5,7 +5,7 @@ import { Card } from '@/components/ui/card';
 const experienceData = {
   title: 'Software Architect',
   company: 'Revalsys Technologies',
-  duration: '2024-Present',
+  duration: '2021-Present',
   responsibilities: [
     'Led .NET-based R&D projects for rapid prototyping and system innovation.',
     'Assisted in migrating legacy systems to modern .NET hybrid architectures.',
@@ -16,6 +16,15 @@ const experienceData = {
     'Built an internal Code reviewing tool to improve code quality.',
     'Created an RDLC Application for internal workflow processes, streamlining development from requirement to end-user.',
     'Worked on ONDC (Open Network for Digital Commerce) Integration.',
+    'Ecommerce projects: Jockey, Speedo, Manyavar, and more.',  
+    'RevalERP - An ERP system for managing business processes, including finance, HR, and supply chain.',
+    'RevalHRM - A Human Resource Management System for managing employee data, payroll, and performance.',
+    'RevalCRM - A Customer Relationship Management system for managing customer interactions and sales processes.',
+    'RevalCMS - A Content Management System for managing website content and digital assets.',
+    'RevalPOS - A Point of Sale system for managing retail transactions and inventory.',
+    'RevalInventory - An Inventory Management system for tracking stock levels and orders.',
+    'RevalProject - A Project Management system for planning, executing, and monitoring projects.',
+    'RevalSales - A Sales Management system for managing sales processes and customer relationships.',
   ],
 };
 

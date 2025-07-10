@@ -11,6 +11,11 @@ import { Badge } from '@/components/ui/badge';
 import { FlaskConical } from 'lucide-react';
 
 const rdProjects = [
+   {
+    title: 'PDF Generation from HTML in C#',
+    description: 'Developed a solution for generating PDF documents from HTML content in a C# environment, utilizing libraries like PuppeteerSharp and iTextSharp to ensure high-quality output and accurate rendering.',
+    tech: ['C#', 'HTML', 'PuppeteerSharp'],
+  },
   {
     title: 'AI-Powered Code Review Assistant',
     description: 'Developed an internal tool that integrates with our CI/CD pipeline to automatically review code for quality, style, and potential bugs using a custom-trained LLM, reducing manual review time by 30%.',
@@ -26,6 +31,21 @@ const rdProjects = [
     description: 'Engineered a Retrieval-Augmented Generation system for internal documentation, enabling developers to ask natural language questions and receive precise answers with source links, significantly improving knowledge discovery.',
     tech: ['RAG', 'LangChain', 'Vector DB', 'Transformers'],
   },
+ {
+    title: 'E2EE',
+    description: 'Developed an end-to-end encryption system for secure document sharing, ensuring that only authorized users can access sensitive information.',
+    tech: ['E2EE', 'Cryptography', 'Secure Protocols'],
+  },
+  {
+    title: 'RabbitMQ',
+    description: 'Developed a messaging system using RabbitMQ to facilitate communication between microservices, ensuring reliable message delivery and processing.',
+    tech: ['RabbitMQ', 'Microservices', 'Messaging', 'Docker'],
+  },
+  {
+    title: 'GRPC Communication',
+    description: 'Developed a messaging system using gRPC to facilitate communication between microservices, ensuring reliable message delivery and processing.',
+    tech: ['gRPC', 'Microservices', 'Messaging', 'Docker'],
+  },  
 ];
 
 export function Research() {

@@ -23,7 +23,7 @@ export function Hero() {
         SOFTWARE ARCHITECT
       </p>
       <p className="mt-4 mx-auto max-w-2xl text-muted-foreground">
-        A seasoned architect delivering scalable, API-driven platforms with expertise in hybrid IoT, system modernization, and AI-powered automation.
+        A seasoned architect delivering scalable, API-driven platforms with expertise in system modernization, and AI-powered automation.
       </p>
       <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
         <Button asChild size="lg">

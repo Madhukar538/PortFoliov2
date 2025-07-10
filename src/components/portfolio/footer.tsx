@@ -3,7 +3,7 @@ export function Footer() {
   return (
     <footer className="border-t">
       <div className="container py-4 text-center text-sm text-muted-foreground">
-        <p>&copy; {currentYear} Boda Madhukar Reddy. All Rights Reserved.</p>
+        <p>{currentYear} Boda Madhukar Reddy.</p>
       </div>
     </footer>
   );

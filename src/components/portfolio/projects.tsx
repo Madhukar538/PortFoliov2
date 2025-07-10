@@ -64,8 +64,8 @@ const ecommerceProjects = [
         id: 'jockey',
         title: 'JOCKEY (Ecommerce)',
         client: 'Jockey (Page industries ltd, Bangalore)',
-        role: 'Software Development Team Member',
-        duration: 'Jan 2019 – May 2022',
+        role: 'Software Development Team Lead',
+        duration: 'Jan 2021 – May 2023',
         url: 'https://www.jockey.in/',
         description: 'Developed features for one of India\'s leading E-commerce portals, contributing to various modules across the platform.',
         responsibilities: [
@@ -83,7 +83,7 @@ const ecommerceProjects = [
         title: 'Speedo (Ecommerce)',
         client: 'Speedo',
         role: 'Software Development Team Lead',
-        duration: 'July 2019 – Jun 2021',
+        duration: 'July 2021 – Jun 2023',
         url: 'https://www.speedo.in/',
         description: 'Led development efforts for the Speedo e-commerce platform, focusing on core administrative and customer-facing features.',
         responsibilities: [
@@ -99,7 +99,7 @@ const ecommerceProjects = [
         id: 'manyavar',
         title: 'Manyavar (Ecommerce)',
         client: 'Vedant Fashion Limited',
-        role: 'Software Development Team Member',
+        role: 'Software Development Team Lead',
         duration: 'Jun 2021 – Jan 2022',
         url: 'https://www.manyavar.com/',
         description: 'Contributed to the development of the Manyavar e-commerce site, a major platform in the ethnic wear market.',

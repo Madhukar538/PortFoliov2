@@ -38,12 +38,12 @@ const skillData: SkillCategory[] = [
   {
     title: 'AI/ML',
     icon: BrainCircuit,
-    skills: ['RAG', 'NLP', 'OpenCV', 'LangChain'],
+    skills: ['RAG', 'NLP', 'OpenCV'],
   },
   {
     title: 'IoT',
     icon: Router,
-    skills: ['Arduino', 'ESP32', 'MQTT', 'Modbus'],
+    skills: ['MQTT'],
   },
   {
     title: 'Developer Tools',
@@ -59,6 +59,11 @@ const skillData: SkillCategory[] = [
     title: 'Dashboards',
     icon: AreaChart,
     skills: ['Grafana'],
+  },
+  {
+    title: 'NoSQL & Caching',
+    icon: AreaChart,
+    skills: ['Solr','MongoDB', 'Redis', 'Memcached'],
   },
 ];
 
