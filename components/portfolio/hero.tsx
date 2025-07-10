@@ -10,7 +10,7 @@ export function Hero() {
           src="https://placehold.co/150x150.png"
           alt="Boda Madhukar Reddy"
           width={150}
-          height={150}
+          height={150} 
           className="rounded-full object-cover"
           data-ai-hint="person portrait"
         />
