@@ -25,6 +25,7 @@ const experienceData = {
     'RevalInventory - An Inventory Management system for tracking stock levels and orders.',
     'RevalProject - A Project Management system for planning, executing, and monitoring projects.',
     'RevalSales - A Sales Management system for managing sales processes and customer relationships.',
+    'Reval Meet - A Video calling system for managing online meetings and conferences.',
   ],
 };
 

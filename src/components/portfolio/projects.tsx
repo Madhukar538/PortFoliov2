@@ -109,6 +109,20 @@ const ecommerceProjects = [
             'Worked within a team to deliver features for a high-traffic e-commerce website.',
         ],
         tech: ['AngularJs', 'Web API', 'ADO.Net', 'C#', 'ASP.Net', 'SQL Server', 'Solr', 'WCF', 'Windows Services']
+    }, {
+        id: 'LuxCozi',
+        title: 'LuxCozi (Ecommerce)',
+        client: 'LuxCozi',
+        role: 'Software Development Team Lead',
+        duration: 'Jun 2021 – Jan 2022',
+        url: 'https://www.luxcozi.com/',
+        description: 'Contributed to the development of the LuxCozi e-commerce site, a major platform in the ethnic wear market.',
+        responsibilities: [
+            'Focused on backend development for the Administrator-facing CMS.',
+            'Contributed to various modules to enhance the platform\'s functionality and performance.',
+            'Worked within a team to deliver features for a high-traffic e-commerce website.',
+        ],
+        tech: ['AngularJs', 'Web API', 'ADO.Net', 'C#', 'ASP.Net', 'SQL Server', 'Solr', 'WCF', 'Windows Services']
     },
 ];
 
