@@ -12,14 +12,16 @@ export default function Home() {
   return (
     <div className="flex min-h-dvh flex-col">
       <Header />
-      <main className="flex-1 container px-4 md:px-6">
+      <main className="flex-1">
         <Hero />
-        <Summary />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Research />
-        <Education />
+        <div className="container px-4 md:px-6 space-y-20 py-20">
+          <Summary />
+          <Skills />
+          <Experience />
+          <Projects />
+          <Research />
+          <Education />
+        </div>
       </main>
       <Footer />
     </div>

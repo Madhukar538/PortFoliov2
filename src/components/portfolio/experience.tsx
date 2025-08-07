@@ -1,13 +1,15 @@
-import { Briefcase } from 'lucide-react';
+import { Briefcase, Calendar, MapPin } from 'lucide-react';
 import { Section } from '@/components/portfolio/section';
 import { Card } from '@/components/ui/card';
-import { motion } from 'framer-motion';
 import { Badge } from '@/components/ui/badge';
 
 const experienceData = {
   title: 'Software Architect',
   company: 'Revalsys Technologies',
+  location: 'Hyderabad, India',
   duration: '2021-Present',
+  type: 'Full-time',
+  description: 'Leading .NET-based R&D projects and architecting scalable solutions for enterprise clients.',
   responsibilities: [
     'Led .NET-based R&D projects for rapid prototyping and system innovation.',
     'Assisted in migrating legacy systems to modern .NET hybrid architectures.',
@@ -34,88 +36,83 @@ const experienceData = {
 export function Experience() {
   return (
     <Section id="experience" title="Work Experience">
-      <div className="relative mx-auto max-w-5xl pl-10 md:pl-12">
-        {/* Timeline line with animation */}
-        <motion.div
-          initial={{ height: 0 }}
-          animate={{ height: '100%' }}
-          transition={{ duration: 1, ease: 'easeInOut' }}
-          className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-accent/80 to-accent/20 rounded-full -translate-x-1/2 shadow-lg shadow-accent/10"
-        />
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="relative"
-        >
-          {/* Timeline icon with animation */}
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2, type: 'spring', stiffness: 200 }}
-            className="absolute -left-10 md:-left-12 top-1 h-12 w-12 rounded-full bg-background border-2 border-accent flex items-center justify-center -translate-x-1/2 shadow-md shadow-accent/20 z-10"
-          >
-            <Briefcase className="h-6 w-6 text-accent" />
-          </motion.div>
-          <Card className="p-10 md:p-12 backdrop-blur-md border-2 border-accent/10 shadow-xl hover:shadow-2xl transition-shadow duration-300" variant="glass">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4">
-              <div>
-                <motion.p
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.2, duration: 0.5 }}
-                  className="text-sm font-medium text-accent tracking-wide"
-                >
-                  {experienceData.duration}
-                </motion.p>
-                <motion.h3
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.3, duration: 0.5 }}
-                  className="mt-1 text-3xl font-extrabold font-headline text-primary drop-shadow-sm"
-                >
-                  {experienceData.title}
-                </motion.h3>
-                <motion.p
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.4, duration: 0.5 }}
-                  className="text-lg font-semibold text-muted-foreground mt-1"
-                >
-                  {experienceData.company}
-                </motion.p>
+      <div className="max-w-4xl mx-auto">
+        <div className="relative">
+          {/* Timeline line */}
+          <div className="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-accent/80 via-accent/40 to-transparent" />
+          
+          <div className="relative animate-fade-in-up">
+            {/* Timeline dot */}
+            <div className="absolute left-8 top-8 w-4 h-4 -translate-x-1/2 rounded-full bg-accent border-4 border-background shadow-lg shadow-accent/20" />
+            
+            {/* Experience card */}
+            <Card className="ml-20 p-8 border-2 border-border hover:border-accent/30 transition-all duration-300 hover-lift hover-glow bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-md">
+              {/* Header */}
+              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-8">
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-sm text-accent font-medium">
+                    <Calendar className="h-4 w-4" />
+                    <span>{experienceData.duration}</span>
+                  </div>
+                  
+                  <h3 className="text-3xl font-bold text-gradient bg-gradient-to-r from-primary to-accent">
+                    {experienceData.title}
+                  </h3>
+                  
+                  <div className="flex items-center gap-4 text-lg text-muted-foreground">
+                    <span className="font-semibold">{experienceData.company}</span>
+                    <div className="flex items-center gap-1">
+                      <MapPin className="h-4 w-4" />
+                      <span>{experienceData.location}</span>
+                    </div>
+                  </div>
+                  
+                  <p className="text-muted-foreground mt-2">
+                    {experienceData.description}
+                  </p>
+                </div>
+                
+                <div className="flex gap-2">
+                  <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30">
+                    <Briefcase className="h-3 w-3 mr-1" />
+                    {experienceData.type}
+                  </Badge>
+                </div>
               </div>
-              <Badge className="mt-2 md:mt-0 self-start md:self-auto px-4 py-2 text-accent border border-accent rounded-full text-xs font-semibold bg-background/80 shadow-sm hover:scale-105 transition-transform duration-200">
-                Full-time
-              </Badge>
-            </div>
-            {/* Responsibilities grid for desktop with animation */}
-            <motion.ul
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={{
-                hidden: {},
-                visible: { transition: { staggerChildren: 0.07 } },
-              }}
-              className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-3 pl-5 text-base"
-            >
-              {experienceData.responsibilities.map((item, index) => (
-                <motion.li
-                  key={index}
-                  variants={{
-                    hidden: { opacity: 0, y: 20 },
-                    visible: { opacity: 1, y: 0 },
-                  }}
-                  className="relative pl-4 before:content-[''] before:absolute before:-left-3 before:top-2 before:h-2.5 before:w-2.5 before:rounded-full before:bg-gradient-to-tr before:from-accent before:to-primary/80 before:shadow before:shadow-accent/20"
-                >
-                  {item}
-                </motion.li>
-              ))}
-            </motion.ul>
-          </Card>
-        </motion.div>
+              
+              {/* Responsibilities */}
+              <div>
+                <h4 className="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                  <div className="w-1 h-6 bg-gradient-to-b from-accent to-primary rounded-full" />
+                  Key Achievements & Responsibilities
+                </h4>
+                
+                <div className="grid md:grid-cols-2 gap-4">
+                  {experienceData.responsibilities.map((item, index) => (
+                    <div
+                      key={index}
+                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-accent/5 transition-colors duration-200 group"
+                      style={{ animationDelay: `${index * 0.05}s` }}
+                    >
+                      <div className="flex-shrink-0 w-2 h-2 rounded-full bg-gradient-to-r from-accent to-primary mt-2 group-hover:scale-125 transition-transform duration-200" />
+                      <p className="text-sm leading-relaxed text-muted-foreground group-hover:text-foreground transition-colors duration-200">
+                        {item}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              
+              {/* Bottom accent */}
+              <div className="mt-8 pt-6 border-t border-border/30">
+                <div className="flex items-center justify-between text-sm text-muted-foreground">
+                  <span>4+ years of experience</span>
+                  <span>20+ major projects delivered</span>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
       </div>
     </Section>
   );
